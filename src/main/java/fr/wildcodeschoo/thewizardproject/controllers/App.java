@@ -8,7 +8,7 @@ public class App {
     public void start() {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath*:applicationContext.xml");
 
-        WizardInterface wizz = context.getBean("scienceFictionId", WizardInterface.class);
+        WizardInterface wizz = context.getBean("theChangeDress", WizardInterface.class);
 
         context.close();
 
@@ -16,6 +16,6 @@ public class App {
         System.out.println("******************");
         System.out.println(wizz.giveAdvice());
         System.out.println("******************");
-        System.out.println(wizz.displayChangeDress());
+        System.out.println(wizz.changeDress());
     }
 }

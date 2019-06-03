@@ -1,11 +1,9 @@
 package fr.wildcodeschoo.thewizardproject.models;
 
-public class Outfit implements WizardInterface {
+public class Outfit implements DressAdviceInterface {
 
-
-    public String changeDress() {
+    public String sendDressAdvice() {
         return "The wizard's dress is blue";
     }
-
 
 }

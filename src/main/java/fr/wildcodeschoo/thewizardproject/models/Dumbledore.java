@@ -2,9 +2,9 @@ package fr.wildcodeschoo.thewizardproject.models;
 
 public class Dumbledore implements WizardInterface {
 
-    private WizardInterface dressCode;
+    private DressAdviceInterface dressCode;
 
-    public Dumbledore(WizardInterface theChangeDress) {
+    public Dumbledore(DressAdviceInterface theChangeDress) {
         dressCode = theChangeDress;
     }
 
@@ -12,9 +12,9 @@ public class Dumbledore implements WizardInterface {
         return "you have to choose harry";
     }
 
-    public  String displayChangeDress() {
+    public  String changeDress() {
 
-        return this.dressCode.changeDress();
+        return this.dressCode.sendDressAdvice();
     }
 
 }

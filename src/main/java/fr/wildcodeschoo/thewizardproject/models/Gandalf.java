@@ -2,9 +2,9 @@ package fr.wildcodeschoo.thewizardproject.models;
 
 public class Gandalf implements WizardInterface {
 
-    private WizardInterface dressCode;
+    private DressAdviceInterface dressCode;
 
-    public Gandalf(WizardInterface theChangeDress) {
+    public Gandalf(DressAdviceInterface theChangeDress) {
         dressCode = theChangeDress;
     }
 
@@ -12,8 +12,8 @@ public class Gandalf implements WizardInterface {
         return " You should not PASSS !! ";
     }
 
-    public  String displayChangeDress() {
+    public  String changeDress() {
 
-        return this.dressCode.changeDress();
+        return this.dressCode.sendDressAdvice();
     }
 }
